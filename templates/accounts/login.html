@@ -12,17 +12,17 @@
     </ul>
     {% endif %}
 
-    <p>
+    <p class="form-group">
         <label for="email">Email:</label>
-        <input name="email" type="email" value="{{ form.email.value }}">
+        <input class="form-control" name="email" type="email" value="{{ form.email.value }}">
     </p>
     
-    <p>
+    <p class="form-group">
         <label for="password">Password:</label>
-        <input name="password" type="password">
+        <input class="form-control" name="password" type="password">
         <a href="/accounts/reset/" title="Reset Your Password">Forgot your password?</a>
     </p>
 
-    <button type="submit">Login</button>
+    <button class="btn btn-primary" type="submit">Login</button>
 </form>
 {% endblock %}

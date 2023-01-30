@@ -4,9 +4,9 @@
 
 {% block content %}
 <h1>Reset Your Password</h1>
-<form method="POST" action="/accounts/reset/">
+<form method="POST" action="/accounts/reset/" class="form-group">
     <label for="email">Email Address:</label>
-    <input type="text" placeholder="Email Address" name="email">
-    <button class="submit">Reset</button>
+    <input class="form-control" type="text" placeholder="Email Address" name="email">
+    <button class="btn btn-primary" class="submit">Reset</button>
 </form>
 {% endblock %}
